@@ -25,6 +25,7 @@ fs.readFile('dest/styles.css', (err, css) => {
       fs.writeFile('dest/styles.min.css', result.css, (err) => {
         if(err) console.log(err)
       })
+      fs.unlink('dest/styles.css', console.log('POSTCSS COMPLETE'))
   })
 
 })

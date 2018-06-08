@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "all": "npm run rollupjs -c ./config/rollup.config.js scss",
     "bs": "node ./config/bs.js",
     "build": "npm-run-all scss postcss rollupjs",
     "build:prod": "npm-run-all scss postcss:prod rollupjs:prod",
